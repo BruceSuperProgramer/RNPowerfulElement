@@ -26,10 +26,15 @@ import ScrollToExample from './ScrollToExample';
 import AnimatedTabBarExample from './AnimatedTabBarExample';
 import LightboxExample from './LightboxExample';
 import LiquidSwipe from './LiquidSwipe';
+import AnimatedFloatingTextInput from './AnimatedFloatingTextInput';
 
 YellowBox.ignoreWarnings(['Calling `getNode()`']);
 
 const SCREENS = {
+  AnimatedFloatingTextInput: {
+    screen: AnimatedFloatingTextInput,
+    title: '🆕 Animated Floating TextInput',
+  },
   AnimatedStyleUpdate: {
     screen: AnimatedStyleUpdateExample,
     title: '🆕 Animated Style Update',
