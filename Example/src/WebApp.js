@@ -21,13 +21,10 @@ import MeasureExample from './MeasureExample';
 import SwipeableListExample from './SwipeableListExample';
 import ScrollableViewExample from './ScrollableViewExample';
 import ScrollToExample from './ScrollToExample';
-/* font awesome does not work * /
 import AnimatedTabBarExample from './AnimatedTabBarExample';
-/**/
 import LightboxExample from './WebSpecific/LightBoxExample';
-/* masked view does not work * /
-import LiquidSwipe from './LiquidSwipe';
-/**/
+// import LiquidSwipe from './LiquidSwipe';
+
 YellowBox.ignoreWarnings(['Calling `getNode()`']);
 
 const SCREENS = {
@@ -71,17 +68,14 @@ const SCREENS = {
     screen: ScrollableViewExample,
     title: '🆕 (advanced) ScrollView imitation',
   },
-  /** /
   AnimatedTabBarExample: {
     screen: AnimatedTabBarExample,
     title: '🆕 (advanced) Tab Bar Example',
   },
-  /** /
-  LiquidSwipe: {
-    screen: LiquidSwipe,
-    title: '🆕 Liquid Swipe Example',
-  },
-  /**/
+  // LiquidSwipe: {
+  //   screen: LiquidSwipe,
+  //   title: '🆕 Liquid Swipe Example',
+  // },
 };
 
 function MainScreen({ navigation }) {
