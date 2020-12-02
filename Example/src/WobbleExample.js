@@ -6,7 +6,7 @@ import Animated, {
   withRepeat,
   withSequence,
 } from 'react-native-reanimated';
-import { View, Button, StyleSheet } from 'react-native';
+import { View, Button, StyleSheet, Text } from 'react-native';
 import React from 'react';
 
 const ANGLE = 9;
@@ -14,7 +14,7 @@ const TIME = 100;
 const EASING = Easing.elastic(1.5);
 
 export default function WobbleExample(props) {
-  const rotation = useSharedValue(1);
+  const rotation = useSharedValue(0);
 
   const style = useAnimatedStyle(() => {
     return {
@@ -28,7 +28,9 @@ export default function WobbleExample(props) {
         flex: 1,
         flexDirection: 'column',
       }}>
-      <Animated.View style={[styles.box, style]} />
+      <Animated.View style={[styles.box, style]}>
+        <Text style={{ color: '#fff', fontWeight: 'bold' }}>Box</Text>
+      </Animated.View>
       <Button
         title="start"
         onPress={() => {
@@ -61,5 +63,7 @@ const styles = StyleSheet.create({
     margin: 50,
     borderRadius: 15,
     backgroundColor: '#001a72',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
